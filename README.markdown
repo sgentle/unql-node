@@ -10,7 +10,7 @@ Uh oh.
 ## Don't panic
 
 ```
-> delete from checkins where username.match(/\d{4}/) && timestamp > (new Date()).getTime()-1000*60*60*24*7
+> delete from checkins where username.match(/\d{4}$/) && timestamp > (new Date()).getTime()-1000*60*60*24*7
 ```
 
 "Great work, Dave! While you're at it, can you make a new database with just the email and username of every user who hasn't logged in for a month?"
