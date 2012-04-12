@@ -9,7 +9,9 @@ Uh oh.
 
 ## Don't panic
 
-`> delete from checkins where username.match(/\d{4}/) && timestamp > (new Date()).getTime()-1000*60*60*24*7`
+```
+> delete from checkins where username.match(/\d{4}/) && timestamp > (new Date()).getTime()-1000*60*60*24*7
+```
 
 "Great work, Dave! While you're at it, can you make a new database with just the email and username of every user who hasn't logged in for a month?"
 
@@ -20,13 +22,17 @@ Uh oh.
 
 "Oh, and I accidentally checked in somewhere that might not go down well in our meeting with USV. Reckon you could take care of it?"
 
-``` update checkins set location = "Gretchen's Flower Shop" where username=="bob" && location=="Gretchen's Pleasure Parlor"```
+```
+update checkins set location = "Gretchen's Flower Shop" where username=="bob" && location=="Gretchen's Pleasure Parlor"
+```
 
 ## How do I get it?
 
 You need [node](http://www.nodejs.org) and [npm](http://npmjs.org). Once you have those:
 
-`npm install -g unql`
+```
+npm install -g unql
+```
 
 And you can run it with `unql` on the command line.
 
@@ -44,7 +50,7 @@ Currently supported:
 * CREATE/DROP COLLECTION db
 * SHOW COLLECTIONS
 
-Whenever it says "expression" or "condition", that's an arbitrary Javascript expression evaluated in the context of each row.
+Whenever it says "expression" or "condition", that's an arbitrary Javascript expression evaluated in the context of each row. 'db' can be the name of a database on the current couch server, or a full URL to a couch database.
 
 Currently not supported:
 
