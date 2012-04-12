@@ -1,4 +1,4 @@
-# UnQL for Node.js
+# UnQL for Node and CouchDB
 ## SQL for NoSQL, just what the doctor ordered
 
 So you've got your fancy new CouchDB instance running. You're ready to change the world with your local mobile social webappsitething just as soon as your $5m funding round closes.
