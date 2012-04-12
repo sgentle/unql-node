@@ -2,15 +2,18 @@
   "author": "Sam Gentle <sam@samgentle.com>",
   "name": "unql",
   "description": "SQL-like frontend for CouchDB",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "bin":"./bin/unql",
   "repository": {
     "type": "git",
     "url": "git://github.com/sgentle/unql-node.git"
   },
   "main": "unql.coffee",
   "dependencies": {
+    "coffee-script": "*",
     "request": "*",
     "optimist": "*",
+    "prompt": "*",
     "burrito": "*"    
   },
   "devDependencies": {},
