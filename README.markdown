@@ -23,7 +23,7 @@ Uh oh.
 "Oh, and I accidentally checked in somewhere that might not go down well in our meeting with USV. Reckon you could take care of it?"
 
 ```
-update checkins set location = "Gretchen's Flower Shop" where username=="bob" && location=="Gretchen's Pleasure Parlor"
+> update checkins set location = "Gretchen's Flower Shop" where username=="bob" && location=="Gretchen's Pleasure Parlor"
 ```
 
 ## How do I get it?
