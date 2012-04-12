@@ -34,7 +34,7 @@ You need [node](http://www.nodejs.org) and [npm](http://npmjs.org). Once you hav
 npm install -g unql
 ```
 
-And you can run it with `unql` on the command line.
+And you can run it with `unql` on the command line. `unql --help` will show you command line switches, and you can type `help` on the REPL for a list of commands.
 
 ## What can I do with it?
 
